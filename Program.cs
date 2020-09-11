@@ -95,6 +95,12 @@ namespace Assignment1_Calculator_
             double num2;
             Console.Write("Enter a number:");
             num2 = Convert.ToDouble(Console.ReadLine());
+            while (num2 == 0)
+            {
+                Console.WriteLine("Cannot Divide by 0. Please enter a non-zero value.");
+                Console.Write("Enter a number:");
+                num2 = Convert.ToDouble(Console.ReadLine());
+            }    
             return result / num2;
 
         }
